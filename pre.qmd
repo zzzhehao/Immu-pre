@@ -1,0 +1,52 @@
+---
+title: "IL-33 facilitates rapid expulsion of the parasitic nematode Strongyloides ratti from the intestine via ILC2- and IL-9-driven mast cell activation"
+subtitle: "@meiners2020"
+
+bibliography: ../../../Research & Career/research-writing/bib/biology-research.bib
+
+author: 
+  - name: Zhehao Hu
+    email: "zhehao.hu@uni-hamburg.de"
+    url: https://zzzhehao.github.io
+    affiliations:
+      - name: Department of Biology, University of Hamburg
+        city: Hamburg
+        country: Germany
+        url: https://www.biologie.uni-hamburg.de/en.html
+date-format: long
+
+editor: source
+execute:
+  eval: true
+  echo: true
+  warning: true
+  error: true   
+format:
+  revealjs:
+    theme: pre.scss
+    code-copy: hover
+    code-overflow: scroll
+    multiplex: false
+    embed-resources: false
+    controls: auto
+    progress: true
+    history: true
+    hash-type: number    
+    slide-number: c/t
+    show-slide-number: print  
+    menu:
+      side: right
+      width: normal
+      numbers: true
+
+    logo: assets/images/up-uhh-logo-u-2010-u-png-2.png
+    title-slide-attributes:
+      data-background-image: https://www.newcomersupply.com/wp-content/uploads/2020/02/4412-66AN005-11-40x-1-2-3-PRIMARY-WEB.jpg
+      data-background-opacity: "0.3"
+
+preload-iframes: true
+---
+
+@meiners2020
+
+## Reference
