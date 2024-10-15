@@ -1,32 +1,127 @@
 /*-- scss:defaults --*/
 
 // fonts
-$font-family-sans-serif: "Palatino Linotype", "Book Antiqua", Palatino,
-  FreeSerif, serif !default;
+// $font-family-sans-serif: "Palatino Linotype", "Book Antiqua", Palatino,
+//   FreeSerif, serif !default;
+$font-miscellaneous-size: 1.3rem;
+$font-subheading-size: 2rem;
+
+// UHH colors
+$uhh-blue: #0171BB;
+$uhh-red: #D9042B;
+$uhh-grey-blue: #3C515B;
+$uhh-pink: #F28095;
+$uhh-cyan: #82B8D9;
 
 // colors
 $body-bg: #f0f1eb !default;
 $body-color: #000 !default;
 $link-color: #51483d !default;
 $selection-bg: #26351c !default;
+$accent-color: $uhh-blue !default;
+$link-color-hover: $uhh-red !default;
+
+$paper: #e9e5df;
+$paper-dark-grey: #575452;
+$ink1: #414645;
+
+$body-bg: $paper;
+$body-color: $ink1;
+$link-color: $accent-color;
+$codeblck-dark-bg: #1f2329;
+$code-block-bg: $codeblck-dark-bg;
+$code-bg: #cac8c6;
+$code-color: #3b2506;
+$kbd-color: $paper-dark-grey;
 
 // headings
-$presentation-heading-font: "Palatino Linotype", "Book Antiqua", Palatino,
-  FreeSerif, serif !default;
+// $presentation-heading-font: "Palatino Linotype", "Book Antiqua", Palatino,
+//   FreeSerif, serif !default;
 $presentation-heading-color: #383d3d !default;
-$presentation-h1-font-size: 3.5rem !default;
+$presentation-title-slide-text-align: left;
+$presentation-h1-font-size: 2.8rem !default;
+$presentation-h2-font-size: 2.6rem !default;
+$presentation-h3-font-size: 2.4rem !default;
+$presentation-font-size-root: 1.8rem;
 
 /*-- scss:rules --*/
 
 .reveal a {
   line-height: 1.3em;
+  text-decoration: underline;
 }
 
-.reveal .slide-logo {
-    left: 5% !important;
-    right: unset !important;
-    bottom: 3%;
-    max-height: 120px !important;  /* 10% of viewport height */
-    width: auto !important;
-    height: auto !important;
+.reveal {
+    .slide-logo {
+        left: 1% !important;
+        right: unset !important;
+        margin-bottom: -0.2%;
+        padding-bottom: 0%;
+        max-height: 120px !important;  /* 10% of viewport height */
+        width: auto !important;
+        height: auto !important;
+    }
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: underline; /* Keep underline on hover and active states */
+}
+
+.subtitle {
+    font-size: $font-subheading-size !important;
+}
+
+.quarto-title-block {
+    .quarto-title-authors {
+        font-size: $font-subheading-size;
+        display: flex;
+        justify-content: $presentation-title-slide-text-align;
+        font-weight: 700 !important;
+  
+        .quarto-title-author {
+            // a,
+            // a:hover,
+            // a:visited,
+            // a:active {
+            //     text-decoration: underline;
+            // }
+    
+            .quarto-title-author-name {
+                margin-bottom: 0.1rem;
+            }
+
+            .custom-author-email {
+                align-items: normal;
+                font-size: $font-miscellaneous-size;
+                font-weight: 500;
+                color: $accent-color;
+                margin-top: 10px;
+                margin-bottom: 0.4em;
+            }
+    
+            .quarto-title-author-orcid {
+                img {
+                margin-bottom: 4px;
+                }
+            }
+    
+            .quarto-title-affiliation {
+                font-size: $font-miscellaneous-size;
+                color: $accent-color;
+                margin-top: 0px;
+                margin-bottom: 8px;
+            }
+    
+            .quarto-title-affiliation:first {
+                margin-top: 12px;
+            }
+      }
+    }
   }
+
+
+.center {
+  text-align: center;
+}

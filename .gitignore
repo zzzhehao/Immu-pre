@@ -5,12 +5,10 @@
 .Rproj.user/
 *.Rproj
 .RData
-assets/
 /_freeze/
 /_extensions/
 .obsidian/
 .pandoc/
-*assets
 confidential/
 *_files/
 

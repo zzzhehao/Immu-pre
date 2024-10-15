@@ -2,10 +2,12 @@
 title: "IL-33 facilitates rapid expulsion of the parasitic nematode Strongyloides ratti from the intestine via ILC2- and IL-9-driven mast cell activation"
 subtitle: "@meiners2020"
 
-bibliography: ../../../Research & Career/research-writing/bib/biology-research.bib
+bibliography: 
+  - ../../../Research & Career/research-writing/bib/biology-research.bib
+  - mention.bib
 
 author: 
-  - name: Zhehao Hu
+  - name: 'Zhehao Hu'
     email: "zhehao.hu@uni-hamburg.de"
     url: https://zzzhehao.github.io
     affiliations:
@@ -23,7 +25,6 @@ execute:
   error: true   
 format:
   revealjs:
-    theme: pre.scss
     code-copy: hover
     code-overflow: scroll
     multiplex: false
@@ -39,14 +40,61 @@ format:
       width: normal
       numbers: true
 
+    template-partials:
+      - partials/title-slide.html
+    theme: 
+      - pre.scss
+
     logo: assets/images/up-uhh-logo-u-2010-u-png-2.png
     title-slide-attributes:
       data-background-image: https://www.newcomersupply.com/wp-content/uploads/2020/02/4412-66AN005-11-40x-1-2-3-PRIMARY-WEB.jpg
-      data-background-opacity: "0.3"
+      data-background-opacity: "0.15"
+    footer: "[https://github.com/zzzhehao/Immu-pre](https://github.com/zzzhehao/Immu-pre)"
 
+    appearance:
+      autoappear: true
+      appearparents: true
 preload-iframes: true
+revealjs-plugins:
+    - appearance
 ---
 
-@meiners2020
+# Helminth Infection and Immune Response {.center}
 
-## Reference
+## *Strongyloides ratti* {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="30%"}
+- Rodent-specific parasitic nematode. 
+
+![*Strongyloides ratti* [@VINEY_2017]](assets/images/s.ratti.png)
+:::
+::: {.column width="70%"}
+![Life Cycle of *Strongyloides stercoralis* (Credit: [CDC](https://www.cdc.gov/dpdx/strongyloidiasis/index.html))](https://www.cdc.gov/dpdx/strongyloidiasis/modules/Strongyloides_LifeCycle_19.jpg?_=51499)
+:::
+::::
+
+::: {.notes}
+- L3 infectious stage
+- Penetrate skin, migration via lungs, mouth, intestine
+- Migration trace: exposure to chitin (material of cuticula)
+  - trigger: transcription of IL-33
+:::
+
+## Immune Response agianst Helminth Infection {style="font-size: 1.4rem;"}
+
+| **Timeline** | **Infection Stage** | **Immune Response** |
+| --- | ------- | --------- |
+| Day 0 | - L3 infectious stage <br>- Penetrate skin | |
+| Day 2 | - Migrate via skin, lung, to mouth. <br>- Invasion by swallow. | - Eosinophilc and neutrophilic granulocytes.<br>- Fast mast cell degranulation promoted by IL-9. |
+| Day 5 | - Reach intestine. <br>- Moult to adult.  | - Fast mast cell degranulation promoted by IL-9. |
+| Week 2 | | - Adaptive immune system established. <br>- Production of IgE and IgG, conventional activation of mast cell. |
+| Week 3-4 | | - Full eradiction by type 2 response. |
+| Post-infection | | - Semi-resistant to subsequent infections |
+
+## [References]{style="font-size: 2.4rem;"}
+
+::: {#refs}
+:::
+
+## Thank you! {.center}
