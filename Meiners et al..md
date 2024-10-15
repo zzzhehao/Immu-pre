@@ -1,5 +1,13 @@
 Title: **IL-33 facilitates rapid expulsion of the parasitic nematode *Strongyloides ratti* from the intestine via ILC2- and IL-9-driven mast cell activation**
 
+## Pathway
+
+1. Parasite-migration triggered release of IL-33
+2. IL-33 (with other alarmin e.g. IL-25) mediated ILC2 expansion
+3. ILC2 mediated IL-9 production increases. IL-9 also activates more ILC2 and thus complete self-enhancing. 
+4. IL-9 mediated mast cell activation
+5. Mast cell mediated *S. ratti* expulsion. 
+
 ## Introduction
 
 ### Helminth Infection Immune Response
@@ -27,6 +35,8 @@ Title: **IL-33 facilitates rapid expulsion of the parasitic nematode *Strongyloi
 - Tissue-derived nuclear cytokin. (alarmin)
 - Triggered by ...
 	- Exposure to migrating parasitic nematodes
+		- mechanical damage of skin (tape stripping-induced)
+		- protease-containing allergen damage to the lung
 	- Intranasal application of chitin (parasites cuticula)
 - Triggered in lung and intestine
 - Central function in host defence.
@@ -44,6 +54,9 @@ Title: **IL-33 facilitates rapid expulsion of the parasitic nematode *Strongyloi
 
 #### HpARI
 - MOW: Tether IL-33 to the nuclear DNA. Blocking ST2.
+- Consists of 3 domains
+	- Domain 1 binds to genomic DNA
+	- Domain 3 exhibits high affinity to IL-33 and thus blocking its ligation with ST2.
 
 #### CCP1/2
 - @chauche2020
@@ -51,11 +64,48 @@ Title: **IL-33 facilitates rapid expulsion of the parasitic nematode *Strongyloi
 - Lower affinity to IL-33 than original form
 - MOW: Bind to and stabilize IL-33, preventing its degradation, mentaining IL-33 in its active form.
 
+### Mouse Line
+
+| BALB/c                                           | Wild type                          |
+| ------------------------------------------------ | ---------------------------------- |
+| SCID                                             | T- and B cells-deficient           |
+| Cpa3<sup>Cre</sup>                               | Mast cell-deficient                |
+| Mcpt8<sup>Cre</sup>                              | Basophil-deficient                 |
+| $\Delta$dblGATA                                  | Eosinophil-deficient               |
+| anti-Gr-1 mAb                                    | Neutrophil-deficient               |
+| IL-9R<sup>-/-</sup>                              | IL-9 receptor-deficient            |
+| BALB/c RAG<sup>-/-</sup>                         | Adaptive-immunity deficient, ILC + |
+| BALB/c RAG<sup>-/-</sup> $\gamma$c<sup>-/-</sup> | Adaptive-immunity deficient, ILC - |
+
 ## Result
 
 ### IL-33 reduces parasite burden
 
+**By promoting intestinal immunity to *S. ratti***
+
+- CCP 1/2 can be considered as "baseline" effect of endogenous IL-33.
+	- CCP 1/2 binds and stabilizes IL-33, without effecting its affinity to ST2, such "stabilization" effect probably prevent the binding of from parasite secreted full-length HpARI. Thus releasing full potential of endogenous IL-33.
+	- PBS (negative control) has, idealy, same amount of endeogenous IL-33 as CCP 1/2 group, but since they are not stabilized, some are bound to HpARI and thus deactivated. 
+	- Same MOW also goes to natural degradation of IL-33 (CCP 1/2 maintains the active form of IL-33)
+	- Leading to siginificance between PBS and CCP 1/2.
+- Neutrophils and eosinophis specialize in killing migrating nematodes in tissue. 
+
 ![](Attachments/Screenshot%202024-10-14%20at%2023.39.54.png)
+
+Fig 2B/2C. 
+- IL-33 is not targeting moving *S. ratti* during the tissue migrating stage (day 1-3 p.i), but rather "anbushing" those parasite reaching the intestines and try to embed themselves.
+- "Newly arriving larvae encountering a hostile environment in the intestine and failing to embed into the mucosa."
+
+![](Attachments/Screenshot%202024-10-15%20at%2017.36.00.png)
+
+### **Independent working pathway from other innate compartments and adaptive system**
+
+By knocking out cetain compartments of immune system. See Fig 3-4.
+
+### IL-33 triggers mast cell activation via ILC2 and IL-9
+
+- Confirmation of contribution of IL-9 in the pathway (Fig. 4D)
+- See Fig 5. Also by knocking out other compartments. 
 
 ## Conclusion
 
