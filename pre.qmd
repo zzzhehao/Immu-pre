@@ -20,9 +20,9 @@ date-format: long
 editor: source
 execute:
   eval: true
-  echo: true
-  warning: true
-  error: true   
+  echo: false
+  error: true
+  output: asis
 format:
   revealjs:
     code-copy: hover
@@ -54,18 +54,63 @@ format:
     appearance:
       autoappear: true
       appearparents: true
+    auto-animate: true
 preload-iframes: true
 revealjs-plugins:
     - appearance
+
+filter:
+    - iconify
 ---
 
+```{r}
+#| warning: false
+#| error: true
+#| message: false
+#| echo: false
+#| output: false
+
+show_pathway <- function(step, add = NULL) {
+    elements <- c(
+        "Helminth Defense",
+        "Mast Cell",
+        "IL-9",
+        "ILC2",
+        "IL-33",
+        "Migration Trace"
+    )
+    pathway <- paste(elements[step:1], collapse = " {{< iconify el:arrow-right >}} ")
+
+    if (!is.null(add)) {add <- paste0(' ', add)}
+    div <- paste0('::: {.absolute-pathway', add, '}')
+
+    cat(div, '
+
+', pathway, '
+
+:::
+')
+}
+
+```
+
 # Helminth Infection and Immune Response {.center}
+
+## Type 2 Immune Response {auto-animate=true}
+
+- T<sub>H</sub>2 cell
+- Massive stimulation of antibody production
+- **IL-4**, IL-13, IL-5, IL-9
+- B-cell class-switching from IgG to IgE
+- Eosinophilic and basophilic tissue infiltration
+- Extensive mast cell degranulation (IL-9)
 
 ## *Strongyloides ratti* {auto-animate=true}
 
 :::: {.columns}
 ::: {.column width="30%"}
 - Rodent-specific parasitic nematode. 
+- Laboratory analogue to human parasite *S. stercoralis*
 
 ![*Strongyloides ratti* [@VINEY_2017]](assets/images/s.ratti.png)
 :::
@@ -89,8 +134,77 @@ revealjs-plugins:
 | Day 2 | - Migrate via skin, lung, to mouth. <br>- Invasion by swallow. | - Eosinophilc and neutrophilic granulocytes.<br>- Fast mast cell degranulation promoted by IL-9. |
 | Day 5 | - Reach intestine. <br>- Moult to adult.  | - Fast mast cell degranulation promoted by IL-9. |
 | Week 2 | | - Adaptive immune system established. <br>- Production of IgE and IgG, conventional activation of mast cell. |
-| Week 3-4 | | - Full eradiction by type 2 response. |
+| Week 3-4 | | - Full eradication. |
 | Post-infection | | - Semi-resistant to subsequent infections |
+
+- Mast cell-deficient mice are unable to terminate infections.
+
+```{r}
+show_pathway(1, 'style="font-size: 1.8rem;"')
+```
+
+## IL-33 triggers rapid parasite expulsion
+
+:::: {.columns}
+::: {.column width="50%"}
+- Significant difference between control (PBS) and IL-33 application / IL-33 stabilization
+- IL-33 inhibitor (HpARI) increases parasite abundance
+:::
+::: {.column width="50%"}
+![](assets/images/IL-33_mMCPT.png)
+:::
+::::
+
+## Activated mast cell excutes the extensive expulsion
+
+:::: {.columns}
+::: {.column width="50%"}
+- mMCPT-1 (mast cell protease 1) reflects to which extent the mucosal mast cells have degranulated, measured with qPCR
+:::
+::: {.column width="50%"}
+![](assets/images/IL-33-sig.png)
+:::
+::::
+
+
+
+## Rapid activation in early stage by IL-9
+
+- Target of *S. ratti* infection strategy
+  - Surpressing IL-9 mediated mast cell activation
+    - Induction of Treg expansion [@blankenhaus2011]
+    - Induction of negative regulatory receptors (BTLA) [@breloer2015]
+- IL-33 mediated IL-9 production by ILC2
+
+```{r}
+show_pathway(3)
+```
+
+## ILC2 (Group 2 Innate Lymphocyte)
+
+```{r}
+show_pathway(4)
+```
+
+## IL-33
+
+- Tissue-derived nuclear cytokine (alarmin)
+- ST2 receptor
+- Expressed majorly in endothelial cells, epithelial cells, fibroblast-like cells.
+
+```{r}
+show_pathway(5)
+```
+
+## IL-33 Production
+
+::: {.absolute-pathway data-id="pathway"} 
+
+ Migration Trace {{< iconify el:arrow-right >}} IL-33 {{< iconify el:arrow-right >}} ILC2 {{< iconify el:arrow-right >}} IL-9 {{< iconify el:arrow-right >}} Mast Cell {{< iconify el:arrow-right >}} Helminth Defense 
+
+:::
+
+## Migration Trace {{< iconify el:arrow-right >}} IL-33 {{< iconify el:arrow-right >}} ILC2 {{< iconify el:arrow-right >}} IL-9 {{< iconify el:arrow-right >}} Mast Cell {{< iconify el:arrow-right >}} Helminth Defense {.center data-id="pathway" auto-animate="true"}
 
 ## [References]{style="font-size: 2.4rem;"}
 

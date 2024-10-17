@@ -41,7 +41,7 @@ $presentation-heading-color: #383d3d !default;
 $presentation-title-slide-text-align: left;
 $presentation-h1-font-size: 2.8rem !default;
 $presentation-h2-font-size: 2.6rem !default;
-$presentation-h3-font-size: 2.4rem !default;
+$presentation-h3-font-size: 2.0rem !default;
 $presentation-font-size-root: 1.8rem;
 
 /*-- scss:rules --*/
@@ -124,4 +124,23 @@ a:active {
 
 .center {
   text-align: center;
+}
+
+.absolute-pathway {
+    position: absolute;
+    text-align: right;
+    right: 0%;
+    top: -5%;
+  }
+
+//   .pushed-content {
+//     margin-top: 10%;
+//   }
+  
+.reveal h2 {
+    margin-top: 5%;
+}
+
+footer {
+    font-size: 1.2rem;
 }

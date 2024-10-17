@@ -14,6 +14,12 @@ Title: **IL-33 facilitates rapid expulsion of the parasitic nematode *Strongyloi
 
 - Controlled and eradicated by canonical type 2 immune response
 
+### Type 2 Immune Response
+
+- Secretion of IL-4 but no IFN-$\gamma$
+- Inflammation by eosinophilic and basophilic tissue infiltration
+- Extensive mast cell degranulation
+
 ### *S. ratti* Infection and Immune Response Timeline
 
 | **Timeline**   | **Infection Stage**                                          | **Immune Response**                                                                                                                                                                                                                            |
@@ -44,6 +50,11 @@ Title: **IL-33 facilitates rapid expulsion of the parasitic nematode *Strongyloi
 	- Lacking IL-33 or IL-33 receptor ST2 => intestinal parasite / larval burdens
 	- Chronic intestinal parasite (*Heligmosomoides polygyrus*) antagonizes IL-33 with IL-33 inhibitors
 
+### IL-9
+
+- Secreted by Th2 cell and ILC2 cell (innate)
+- Stimulator factor for mast cells.
+
 ## Methods
 
 ### Utility
@@ -62,7 +73,7 @@ Title: **IL-33 facilitates rapid expulsion of the parasitic nematode *Strongyloi
 - @chauche2020
 - Non-natural truncation of HpARI: first 2 domains
 - Lower affinity to IL-33 than original form
-- MOW: Bind to and stabilize IL-33, preventing its degradation, mentaining IL-33 in its active form.
+- MOW: Stabilize IL-33, preventing its degradation, mentaining IL-33 in its active form.
 
 ### Mouse Line
 
@@ -77,14 +88,16 @@ Title: **IL-33 facilitates rapid expulsion of the parasitic nematode *Strongyloi
 | BALB/c RAG<sup>-/-</sup>                         | Adaptive-immunity deficient, ILC + |
 | BALB/c RAG<sup>-/-</sup> $\gamma$c<sup>-/-</sup> | Adaptive-immunity deficient, ILC - |
 
+- BALB/c mice has tendency towards type 2 immune respons
+	- inherently susceptible to bacterial infections
+	- inherently resistant to infection by helminths
+
 ## Result
 
-### IL-33 reduces parasite burden
-
-**By promoting intestinal immunity to *S. ratti***
+### IL-33 reduces intestine parasite abundance
 
 - CCP 1/2 can be considered as "baseline" effect of endogenous IL-33.
-	- CCP 1/2 binds and stabilizes IL-33, without effecting its affinity to ST2, such "stabilization" effect probably prevent the binding of from parasite secreted full-length HpARI. Thus releasing full potential of endogenous IL-33.
+	- CCP 1/2 binds (10-fold lower affinity) and stabilizes IL-33, without effecting its affinity to ST2, such "stabilization" effect probably prevent the binding of from parasite secreted full-length HpARI. Thus releasing full potential of endogenous IL-33.
 	- PBS (negative control) has, idealy, same amount of endeogenous IL-33 as CCP 1/2 group, but since they are not stabilized, some are bound to HpARI and thus deactivated. 
 	- Same MOW also goes to natural degradation of IL-33 (CCP 1/2 maintains the active form of IL-33)
 	- Leading to siginificance between PBS and CCP 1/2.
@@ -114,3 +127,7 @@ By knocking out cetain compartments of immune system. See Fig 3-4.
 	- Strictly depends on ILC present and IL-9 receptor.
 - Preventing embedment of arriving parasites in the intestines.
 - Non-redundant IL-33-triggered ILC2-, IL-9-, and mast cell-dependent innate pathway.
+
+## Outlooks & Further Notions
+
+- In fact, IL-4 knockout mice are perfectly resistant to _Nippostrongylus_ infection, indicating that IL-4 is not required for protection against this helminth in mice @lawrence1996 
