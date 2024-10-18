@@ -108,13 +108,13 @@ show_pathway <- function(step, add = NULL) {
 ## *Strongyloides ratti* {auto-animate=true}
 
 :::: {.columns}
-::: {.column width="30%"}
+::: {.column width="40%"}
 - Rodent-specific parasitic nematode. 
 - Laboratory analogue to human parasite *S. stercoralis*
 
 ![*Strongyloides ratti* [@VINEY_2017]](assets/images/s.ratti.png)
 :::
-::: {.column width="70%"}
+::: {.column width="60%"}
 ![Life Cycle of *Strongyloides stercoralis* (Credit: [CDC](https://www.cdc.gov/dpdx/strongyloidiasis/index.html))](https://www.cdc.gov/dpdx/strongyloidiasis/modules/Strongyloides_LifeCycle_19.jpg?_=51499)
 :::
 ::::
@@ -146,26 +146,27 @@ show_pathway(1, 'style="font-size: 1.8rem;"')
 ## IL-33 triggers rapid parasite expulsion
 
 :::: {.columns}
-::: {.column width="50%"}
-- Significant difference between control (PBS) and IL-33 application / IL-33 stabilization
-- IL-33 inhibitor (HpARI) increases parasite abundance
+::: {.column width="60%"}
+- HpARI binds IL-33 to DNA (tether), block its receptor (ST2).
+  - IL-33 inhibitor (HpARI) increases parasite abundance.
+- IL-33 effect promotion: i.n. rec. IL-33 application / CCP 1/2 stabilizes IL-33 and amplifies its effect.
+  - Significant difference between control (PBS) and IL-33 application / IL-33 stabilization.
 :::
-::: {.column width="50%"}
-![](assets/images/IL-33_mMCPT.png)
+::: {.column width="40%"}
+![](assets/images/IL-33-sig.png)
 :::
 ::::
 
 ## Activated mast cell excutes the extensive expulsion
 
 :::: {.columns}
-::: {.column width="50%"}
+::: {.column width="60%"}
 - mMCPT-1 (mast cell protease 1) reflects to which extent the mucosal mast cells have degranulated, measured with qPCR
 :::
-::: {.column width="50%"}
-![](assets/images/IL-33-sig.png)
+::: {.column width="40%"}
+![](assets/images/IL-33_mMCPT.png)
 :::
 ::::
-
 
 
 ## Rapid activation in early stage by IL-9
